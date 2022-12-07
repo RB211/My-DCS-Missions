@@ -167,34 +167,25 @@ end
 
 function destroyBVR()
   
-  local i = 0
+  
   if(Spawn_Group_M23b ~= nil)
     then Spawn_Group_M23b:Destroy()
-    i = i + 1
-  elseif(
-  Spawn_Group_M29b ~= nil)
+  end 
+  if(Spawn_Group_M29b ~= nil)
     then Spawn_Group_M29b:Destroy()
-    i = i + 1
-  elseif(
-  Spawn_Group_SU27b ~= nil)
+  end  
+  if(Spawn_Group_SU27b ~= nil)
     then Spawn_Group_SU27b:Destroy()
-   i = i + 1
-  elseif(
-  Spawn_Group_SU30b ~= nil)
+  end 
+  if(Spawn_Group_SU30b ~= nil)
     then Spawn_Group_SU30b:Destroy()
-    i = i + 1
-  elseif(
-  Spawn_Group_SU31b ~= nil)
+  end  
+  if(Spawn_Group_SU31b ~= nil)
     then Spawn_Group_SU31b:Destroy()
-    i = i + 1
-  else
-  MESSAGE:New( "There are no AI BVR aircraft spawned", 6 ):ToBlue()
+  end
   
-  end
-  if(i>0)
-  then
-    MESSAGE:New( "AI BVR Aircraft Deactivated", 6 ):ToBlue()
-  end
+  MESSAGE:New( "AI BVR Aircraft Deactivated", 6 ):ToBlue()
+  
 end  
   
   
